@@ -9,6 +9,6 @@
     }
   ],
   "env": {
-    "VITE_API_URL": "https://your-backend-app.onrender.com"
+    "VITE_API_URL": "https://backend-deployment-nmw2.onrender.com"
   }
 } 
