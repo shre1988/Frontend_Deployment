@@ -1,5 +1,7 @@
 // API Configuration
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://backend-deployment-nmw2.onrender.com';
+const API_BASE_URL =
+  import.meta.env.VITE_API_URL ||
+  "https://backend-deployment-nmw2.onrender.com";
 
 export const API_ENDPOINTS = {
   LOGIN: `${API_BASE_URL}/auth/login`,
@@ -11,6 +13,9 @@ export const API_ENDPOINTS = {
   INWARD_STATS: `${API_BASE_URL}/stats/inward`,
   OUTWARD_STATS: `${API_BASE_URL}/stats/outward`,
   ALERTS: `${API_BASE_URL}/alerts`,
+
+  ADMIN_USERS: `${API_BASE_URL}/admin/users`,
+  ADMIN_USER_BY_ID: (id) => `${API_BASE_URL}/admin/users/${id}`,
 };
 
-export default API_BASE_URL; 
+export default API_BASE_URL;
