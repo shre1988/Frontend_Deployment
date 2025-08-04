@@ -75,6 +75,38 @@ const Login = () => {
               {isLogin ? 'Sign in to access your inventory' : 'Join us to manage your lab inventory'}
             </p>
           </div>
+
+          {/* Default Credentials Section */}
+          {isLogin && (
+            <div className="mb-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+              <h3 className="text-sm font-semibold text-blue-800 mb-3">🚀 Quick Access - Default Credentials</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+                <div className="bg-white p-3 rounded border">
+                  <div className="font-semibold text-blue-700 mb-1">👑 Admin</div>
+                  <div className="text-gray-600">Email: admin@lims.com</div>
+                  <div className="text-gray-600">Password: admin123</div>
+                </div>
+                <div className="bg-white p-3 rounded border">
+                  <div className="font-semibold text-green-700 mb-1">🔧 Lab Technician</div>
+                  <div className="text-gray-600">Email: technician@lims.com</div>
+                  <div className="text-gray-600">Password: tech123</div>
+                </div>
+                <div className="bg-white p-3 rounded border">
+                  <div className="font-semibold text-purple-700 mb-1">🔬 Researcher</div>
+                  <div className="text-gray-600">Email: researcher@lims.com</div>
+                  <div className="text-gray-600">Password: research123</div>
+                </div>
+                <div className="bg-white p-3 rounded border">
+                  <div className="font-semibold text-orange-700 mb-1">⚙️ Engineer</div>
+                  <div className="text-gray-600">Email: engineer@lims.com</div>
+                  <div className="text-gray-600">Password: engineer123</div>
+                </div>
+              </div>
+              <div className="mt-3 p-2 bg-yellow-50 border border-yellow-200 rounded text-xs text-yellow-800">
+                <span className="font-semibold">💡 Note:</span> You can also create a new account by clicking "Sign up" below. New users will be registered with Researcher role by default.
+              </div>
+            </div>
+          )}
           
           <form onSubmit={handleSubmit} className="space-y-6">
             {error && (
